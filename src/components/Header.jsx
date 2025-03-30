@@ -49,7 +49,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 items-center w-full bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden">
+        <div className="absolute top-16 right-0 items-center bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden h-full w-full">
           <ul className="list-none justify-center space-y-4">
             <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
               Home

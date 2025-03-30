@@ -4,6 +4,7 @@ import { Button } from "./components/ui/button"; // Import the Button component
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Category from "./components/Category";
+import MostSearchedCar from "./components/MostSearchedCar";
 
 export function Home() {
   return (
@@ -11,6 +12,7 @@ export function Home() {
       <Header />
       <Hero />
       <Category />
+      <MostSearchedCar />
     </div>
   );
 }

@@ -3,15 +3,15 @@ import React from "react";
 
 function Category() {
   return (
-    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full -mt-5">
+    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full -mt-">
       <h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-center mb-4 sm:mb-6">
         Browse By Type
       </h2>
-      <div className="flex flex-row gap-2 px-2 sm:px-20 overflow-x-auto justify-center">
+      <div className="flex flex-row gap-2 px-2 sm:px-20 overflow-x-auto justify-start sm:justify-center snap-x snap-mandatory">
         {Data.Category.map((category, index) => (
           <div
             key={index}
-            className="flex-shrink-0 flex flex-col items-center justify-center text-center border border-gray-300 rounded-md shadow-sm p-1 sm:p-3 bg-white hover:shadow-md transition-shadow duration-200 ease-in-out cursor-pointer min-w-[80px] sm:min-w-[100px]"
+            className="flex-shrink-0 flex flex-col items-center justify-center text-center border border-gray-300 rounded-md shadow-sm p-1 sm:p-3 bg-white hover:bg-gray-100 hover:border-primary hover:shadow-lg transition-all duration-200 ease-in-out cursor-pointer min-w-[80px] sm:min-w-[100px] w-[25%] sm:w-auto snap-center"
           >
             <img
               src={category.icon}
