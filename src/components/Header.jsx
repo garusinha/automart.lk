@@ -7,7 +7,12 @@ function Header() {
 
   return (
     <div className="flex justify-between items-center p-4 shadow-sm">
-      <img src="/logo.png" width={250} height={200} />
+      <img
+        src={`${import.meta.env.BASE_URL}logo.png`}
+        width={250}
+        height={200}
+        alt="Logo"
+      />
       <ul className="hidden md:flex space-x-15">
         <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
           Home

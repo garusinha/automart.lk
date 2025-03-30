@@ -69,7 +69,7 @@ function Hero() {
         </div>
 
         <img
-          src="/car.png"
+          src={`${import.meta.env.BASE_URL}car.png`} // Use import.meta.env.BASE_URL for dynamic path
           className="w-40 sm:w-200 h-auto -mt-10 sm:-mt-50"
           alt="Car"
         />

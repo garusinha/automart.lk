@@ -72,17 +72,17 @@ const Category = [
   {
     id: 7,
     name: "Sports",
-    icon: "/formula.png", // Black Van icon
+    icon: `${import.meta.env.BASE_URL}formula.png`, // Dynamic path for Sports icon
   },
   {
     id: 8,
     name: "Van",
-    icon: "/van.png", // Black Van icon
+    icon: `${import.meta.env.BASE_URL}van.png`, // Dynamic path for Van icon
   },
   {
     id: 9,
     name: "Truck",
-    icon: "/pickup-truck.png", // Black Van icon
+    icon: `${import.meta.env.BASE_URL}pickup-truck.png`, // Dynamic path for Truck icon
   },
 ];
 
