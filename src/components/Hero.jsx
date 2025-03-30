@@ -11,66 +11,11 @@ function Hero() {
         <h2 className="text-3xl sm:text-[60px] font-bold text-center">
           Buy and Sell All Vehicles in Sri Lanka
         </h2>
-
+        <Search /> {/* Include the Search component here */}
         {/* Search Section */}
-        <div className="flex flex-row items-center justify-center gap-4 w-full">
-          {/* Cars Dropdown */}
-          <div className="flex flex-col items-center">
-            <label
-              htmlFor="cars"
-              className="text-xs sm:text-sm font-medium mb-1"
-            >
-              Cars
-            </label>
-            <select
-              id="cars"
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm w-full"
-            >
-              <option value="suv">SUV</option>
-              <option value="sedan">Sedan</option>
-              <option value="hatchback">Hatchback</option>
-            </select>
-          </div>
-
-          {/* Car Makes Dropdown */}
-          <div className="flex flex-col items-center">
-            <label
-              htmlFor="car-makes"
-              className="text-xs sm:text-sm font-medium mb-1"
-            >
-              Car Makes
-            </label>
-            <select
-              id="car-makes"
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm w-full"
-            >
-              <option value="toyota">Toyota</option>
-              <option value="honda">Honda</option>
-              <option value="bmw">BMW</option>
-            </select>
-          </div>
-
-          {/* Pricing Dropdown */}
-          <div className="flex flex-col items-center">
-            <label
-              htmlFor="pricing"
-              className="text-xs sm:text-sm font-medium mb-1"
-            >
-              Pricing
-            </label>
-            <select
-              id="pricing"
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm w-full"
-            >
-              <option value="low-to-high">Low to High</option>
-              <option value="high-to-low">High to Low</option>
-            </select>
-          </div>
-        </div>
-
         <img
           src={`${import.meta.env.BASE_URL}car.png`} // Use import.meta.env.BASE_URL for dynamic path
-          className="w-90 sm:w-90 md:w-96 lg:w-[900px] h-auto -mt-10 sm:-mt-50"
+          className="w-90 sm:w-90 md:w-96 lg:w-[900px] h-auto -mt-20 sm:-mt-60"
           alt="Car"
         />
       </div>
