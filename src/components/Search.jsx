@@ -15,7 +15,7 @@ function Search() {
     <div className="p-2 bg-white rounded-md flex flex-row gap-2 md:gap-3 px-2 items-center w-full relative">
       {/* Cars Select Box */}
       <Select className="inline-flex w-20">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-5 truncate">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-5 truncate justify-center text-center">
           <SelectValue placeholder="Cars" />
         </SelectTrigger>
         <SelectContent
@@ -34,7 +34,7 @@ function Search() {
       <Separator orientation="vertical" />
       {/* Car Makes Select Box */}
       <Select className="inline-flex w-36">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-0.5 sm:p-5 truncate">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-0.5 sm:p-5 truncate justify-center text-center">
           <SelectValue placeholder="Car Makes" />
         </SelectTrigger>
         <SelectContent
@@ -56,7 +56,7 @@ function Search() {
       <Separator orientation="vertical" />
       {/* Pricing Select Box */}
       <Select className="inline-flex w-36">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-0.5 sm:p-5 truncate">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-0.5 sm:p-5 truncate justify-center text-center">
           <SelectValue placeholder="Pricing" />
         </SelectTrigger>
         <SelectContent

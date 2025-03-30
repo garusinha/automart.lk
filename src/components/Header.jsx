@@ -12,12 +12,12 @@ function Header() {
       {/* Logo */}
       <img
         src={`${import.meta.env.BASE_URL}logo.png`}
-        className="w-28 sm:w-40 md:w-48 lg:w-56 h-auto"
+        className="w-40 sm:w-40 md:w-48 lg:w-56 h-auto"
         alt="Logo"
       />
 
       {/* Submit Listing Button for Mobile */}
-      <Button className="block md:hidden text-sm px-3 py-1 bg-primary text-white rounded-md">
+      <Button className="block md:hidden text-sm px-2 py-1 bg-[#2f2f33] text-white rounded-md">
         Submit Listing
       </Button>
 
