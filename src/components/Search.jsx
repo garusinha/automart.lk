@@ -13,8 +13,9 @@ import Data from "../shared/Data";
 function Search() {
   return (
     <div className="p-2 bg-white rounded-md flex flex-row gap-2 px-2 items-center w-full relative">
-      <Select className="relative w-[30%]">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
+      {/* Cars Select Box */}
+      <Select className="inline-flex w-28">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2 truncate">
           <SelectValue placeholder="Cars" />
         </SelectTrigger>
         <SelectContent
@@ -22,13 +23,18 @@ function Search() {
             "absolute top-full left-0 z-50 bg-white shadow-lg rounded-md"
           }
         >
-          <SelectItem value="light">New</SelectItem>
-          <SelectItem value="dark">Old</SelectItem>
+          <SelectItem className="text-xs sm:text-sm" value="light">
+            New
+          </SelectItem>
+          <SelectItem className="text-xs sm:text-sm" value="dark">
+            Old
+          </SelectItem>
         </SelectContent>
       </Select>
       <Separator orientation="vertical" />
-      <Select className="w-[30%]">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
+      {/* Car Makes Select Box */}
+      <Select className="inline-flex w-36">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2 truncate">
           <SelectValue placeholder="Car Makes" />
         </SelectTrigger>
         <SelectContent
@@ -37,15 +43,20 @@ function Search() {
           }
         >
           {Data.CarMakes.map((maker, index) => (
-            <SelectItem key={index} value={maker.name}>
+            <SelectItem
+              key={index}
+              value={maker.name}
+              className="text-xs sm:text-sm"
+            >
               {maker.name}
             </SelectItem>
           ))}
         </SelectContent>
       </Select>
       <Separator orientation="vertical" />
-      <Select className="w-[30%]">
-        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
+      {/* Pricing Select Box */}
+      <Select className="inline-flex w-28">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2 truncate">
           <SelectValue placeholder="Pricing" />
         </SelectTrigger>
         <SelectContent
@@ -54,12 +65,17 @@ function Search() {
           }
         >
           {Data.Pricing.map((price, index) => (
-            <SelectItem key={index} value={price.amount}>
+            <SelectItem
+              key={index}
+              value={price.amount}
+              className="text-xs sm:text-sm"
+            >
               {price.amount}
             </SelectItem>
           ))}
         </SelectContent>
       </Select>
+      {/* Search Button */}
       <div className="text-sm sm:text-base bg-blue-900 text-white p-1 sm:p-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/80 transition-all duration-200 ease-in-out">
         <CiSearch />
       </div>
