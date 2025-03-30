@@ -3,11 +3,11 @@ import React from "react";
 
 function Category() {
   return (
-    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full">
+    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full -mt-12">
       <h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-center mb-4 sm:mb-6">
         Browse By Type
       </h2>
-      <div className="flex flex-row gap-2 px-2 sm:px-20 overflow-x-auto">
+      <div className="flex flex-row gap-2 px-2 sm:px-20 overflow-x-auto justify-center">
         {Data.Category.map((category, index) => (
           <div
             key={index}
