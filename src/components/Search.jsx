@@ -12,9 +12,9 @@ import Data from "../shared/Data";
 
 function Search() {
   return (
-    <div className="p-2 bg-white rounded-md flex flex-row gap-1 px-2 items-center w-full relative">
+    <div className="p-2 bg-white rounded-md flex flex-row gap-2 md:gap-3 px-2 items-center w-full relative">
       {/* Cars Select Box */}
-      <Select className="inline-flex w-28">
+      <Select className="inline-flex w-20">
         <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-5 truncate">
           <SelectValue placeholder="Cars" />
         </SelectTrigger>
@@ -55,7 +55,7 @@ function Search() {
       </Select>
       <Separator orientation="vertical" />
       {/* Pricing Select Box */}
-      <Select className="inline-flex w-28">
+      <Select className="inline-flex w-36">
         <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-0.5 sm:p-5 truncate">
           <SelectValue placeholder="Pricing" />
         </SelectTrigger>

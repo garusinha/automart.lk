@@ -9,7 +9,7 @@ function Header() {
     <div className="flex justify-between items-center p-4 shadow-sm">
       <img
         src={`${import.meta.env.BASE_URL}logo.png`}
-        className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto"
+        className="w-45 sm:w-40 md:w-48 lg:w-56 h-auto"
         alt="Logo"
       />
       <ul className="hidden md:flex space-x-15">
