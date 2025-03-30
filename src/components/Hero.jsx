@@ -4,7 +4,7 @@ import Search from "./Search"; // Import the Search component
 function Hero() {
   return (
     <div className="mx-auto px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
-      <div className="flex flex-col items-center p-6 sm:p-10 py-16 sm:py-20 gap-4 sm:gap-6 h-auto sm:h-[500px] w-full bg-[#eef0fc] rounded-lg shadow-md">
+      <div className="flex flex-col items-center p-6 sm:p-10 py-16 sm:py-10 gap-4 sm:gap-6 h-auto sm:h-[500px] w-full bg-[#eef0fc] rounded-lg shadow-md">
         <h2 className="text-sm sm:text-lg tracking-wide font-semibold text-gray-500 animate-fade-in text-center">
           Find Your Dream Car
         </h2>
