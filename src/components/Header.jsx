@@ -49,19 +49,21 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-16 right-10 w-100% bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden">
-          <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-            Home
-          </li>
-          <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-            Search
-          </li>
-          <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-            New
-          </li>
-          <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-            PreOwned
-          </li>
+        <div className="absolute top-16 left-0 items-center w-full bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden">
+          <ul className="list-none justify-center space-y-4">
+            <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+              Home
+            </li>
+            <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+              Search
+            </li>
+            <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+              New
+            </li>
+            <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+              PreOwned
+            </li>
+          </ul>
         </div>
       )}
 
