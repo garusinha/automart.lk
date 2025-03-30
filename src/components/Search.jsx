@@ -12,9 +12,9 @@ import Data from "../shared/Data";
 
 function Search() {
   return (
-    <div className="p-2 md:p-5 bg-white rounded-md md:rounded-full flex-col md:flex md:flex-row gap-10 px-5 items-center w-[60%] relative">
-      <Select className="relative">
-        <SelectTrigger className="w-full outline-none md:border-none shadow-none text-lg">
+    <div className="p-2 bg-white rounded-md flex flex-row gap-2 px-2 items-center w-full relative">
+      <Select className="relative w-[30%]">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
           <SelectValue placeholder="Cars" />
         </SelectTrigger>
         <SelectContent
@@ -27,8 +27,8 @@ function Search() {
         </SelectContent>
       </Select>
       <Separator orientation="vertical" />
-      <Select>
-        <SelectTrigger className="w-full outline-none md:border-none shadow-none text-lg">
+      <Select className="w-[30%]">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
           <SelectValue placeholder="Car Makes" />
         </SelectTrigger>
         <SelectContent
@@ -37,13 +37,15 @@ function Search() {
           }
         >
           {Data.CarMakes.map((maker, index) => (
-            <SelectItem value={maker.name}>{maker.name}</SelectItem>
+            <SelectItem key={index} value={maker.name}>
+              {maker.name}
+            </SelectItem>
           ))}
         </SelectContent>
       </Select>
       <Separator orientation="vertical" />
-      <Select>
-        <SelectTrigger className="w-full outline-none md:border-none shadow-none text-lg">
+      <Select className="w-[30%]">
+        <SelectTrigger className="w-full outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-1 sm:p-2">
           <SelectValue placeholder="Pricing" />
         </SelectTrigger>
         <SelectContent
@@ -52,11 +54,13 @@ function Search() {
           }
         >
           {Data.Pricing.map((price, index) => (
-            <SelectItem value={price.amount}>{price.amount}</SelectItem>
+            <SelectItem key={index} value={price.amount}>
+              {price.amount}
+            </SelectItem>
           ))}
         </SelectContent>
       </Select>
-      <div className="text-xl bg-blue-900 text-black p-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/80 transition-all duration-200 ease-in-out">
+      <div className="text-sm sm:text-base bg-blue-900 text-white p-1 sm:p-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/80 transition-all duration-200 ease-in-out">
         <CiSearch />
       </div>
     </div>
