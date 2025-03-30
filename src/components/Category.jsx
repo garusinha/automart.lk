@@ -3,7 +3,7 @@ import React from "react";
 
 function Category() {
   return (
-    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full -mt-12">
+    <div className="p-4 sm:p-10 py-2 gap-4 sm:gap-6 h-auto w-full -mt-5">
       <h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-center mb-4 sm:mb-6">
         Browse By Type
       </h2>

@@ -16,6 +16,11 @@ function Header() {
         alt="Logo"
       />
 
+      {/* Submit Listing Button for Mobile */}
+      <Button className="block md:hidden text-sm px-3 py-1 bg-primary text-white rounded-md">
+        Submit Listing
+      </Button>
+
       {/* Hamburger Menu for Mobile */}
       <div className="md:hidden">
         <button
@@ -44,7 +49,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md z-50 flex flex-col items-center space-y-4 py-4 md:hidden">
+        <div className="absolute top-16 right-10 w-100% bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden">
           <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
             Home
           </li>
@@ -60,7 +65,7 @@ function Header() {
         </div>
       )}
 
-      {/* Submit Listing Button */}
+      {/* Submit Listing Button for Desktop */}
       {isSignedIn ? (
         <div className="hidden md:flex items-center space-x-4">
           <UserButton />
