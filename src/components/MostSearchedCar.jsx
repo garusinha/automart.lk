@@ -12,17 +12,15 @@ import {
 function MostSearchedCar() {
   console.log(FakeData.carList);
   return (
-    <div className="mx-24">
-      <h2 className="font-bold text-3xl text-center my-16">
+    <div className="mx-15 pl-0 pr-0 md:pl-20 md:pr-20 ">
+      {/* Heading */}
+      <h2 className="font-bold text-3xl text-center my-8 ">
         Most Seached Cars
       </h2>
       <Carousel>
         <CarouselContent>
           {FakeData.carList.map((car, index) => (
-            <CarouselItem
-              className="basis-1/1 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
-              key={index}
-            >
+            <CarouselItem className="basis-1/2 md:basis-1/3" key={index}>
               <CarItem car={car} />
             </CarouselItem>
           ))}
