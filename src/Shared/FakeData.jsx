@@ -15,6 +15,6 @@ function createRandomeCarList() {
 }
 
 // Generate exactly 7 cars
-const carList = faker.helpers.multiple(createRandomeCarList, { count: 7 });
+const carList = faker.helpers.multiple(createRandomeCarList, { count: 150 });
 
 export default { carList };
