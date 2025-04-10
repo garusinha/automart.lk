@@ -1,14 +1,35 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./home";
 import { ClerkProvider } from "@clerk/clerk-react";
+import Profile from "./profile";
+import AddListing from "./add-listing";
 
-const router = createHashRouter([
+// Optional: 404 Page
+const NotFound = () => <div>404 - Page Not Found</div>;
+
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/automart.lk/",
     element: <Home />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/automart.lk/profile",
+    element: <Profile />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "automart.lk/add-listing",
+    element: <AddListing />,
+    errorElement: <NotFound />,
+  },
+
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

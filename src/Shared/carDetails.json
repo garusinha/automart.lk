@@ -1,0 +1,136 @@
+{
+  "carDetails": [
+    {
+      "label": "Listing Title",
+      "name": "listingTitle",
+      "fieldType": "text",
+      "required": true,
+      "column": 2,
+      "icon": "fa-solid fa-car"
+    },
+
+    {
+      "label": "Original Price",
+      "name": "originalPrice",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "fa-solid fa-money-bill"
+    },
+    {
+      "label": "Selling Price",
+      "name": "sellingPrice",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "fa-solid fa-money-bill"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "dropdown",
+      "options": ["SUV", "Sedan", "Truck", "Hatchback", "Coupe"],
+      "required": true,
+      "column": 1,
+      "icon": "fa-solid fa-car"
+    },
+    {
+      "label": "Condition",
+      "name": "condition",
+      "fieldType": "dropdown",
+      "options": ["New", "Used", "Certified Pre-Owned"]
+    },
+    {
+      "label": "Type",
+      "name": "type",
+      "fieldType": "dropdown",
+      "options": ["Electric", "Hybrid", "Petrol", "Diesel"],
+      "required": true,
+      "column": 1,
+      "icon": "FaChargingStation"
+    },
+    {
+      "label": "Make",
+      "name": "make",
+      "fieldType": "dropdown",
+      "options": [
+        "Toyota",
+        "Honda",
+        "Ford",
+        "Chevrolet",
+        "Nissan",
+        "BMW",
+        "Mercedes-Benz",
+        "Audi",
+        "Volkswagen",
+        "Hyundai",
+        "Kia",
+        "Subaru",
+        "Mazda",
+        "Lexus",
+        "Porsche",
+        "Jaguar"
+      ],
+      "required": true,
+      "column": 1
+    },
+    {
+      "label": "Year",
+      "name": "year",
+      "fieldType": "number",
+      "required": true,
+      "column": 1,
+      "icon": "FaCalendarAlt"
+    },
+    {
+      "label": "Drive Type",
+      "name": "driveType",
+      "fieldType": "dropdown",
+      "options": ["AWD", "FWD", "RWD", "4WD"],
+      "required": true,
+      "column": 1,
+      "icon": "FaRoad"
+    },
+    {
+      "label": "Transmission",
+      "name": "transmission",
+      "fieldType": "dropdown",
+      "options": ["Automatic", "Manual", "CVT"],
+      "required": true,
+      "column": 1,
+      "icon": "FaCarTransmission"
+    },
+    {
+      "label": "Mileage",
+      "name": "mileage",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "fa-solid fa-tachometer-alt"
+    },
+
+    {
+      "label": "Location",
+      "name": "location",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "fa-solid fa-map-marker-alt"
+    },
+    {
+      "label": "Description",
+      "name": "description",
+      "fieldType": "textarea",
+      "required": true,
+      "column": 2,
+      "icon": "fa-solid fa-align-left"
+    },
+    {
+      "label": "Images",
+      "name": "images",
+      "fieldType": "file",
+      "required": true,
+      "column": 2,
+      "icon": "fa-solid fa-images"
+    }
+  ]
+}

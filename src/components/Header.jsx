@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useUser, UserButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 import { FiMenu, FiX } from "react-icons/fi"; // Import icons for the hamburger menu
+import { Link } from "react-router-dom";
 
 function Header() {
   const { user, isSignedIn } = useUser();
@@ -71,10 +72,14 @@ function Header() {
       {isSignedIn ? (
         <div className="hidden md:flex items-center space-x-4">
           <UserButton />
-          <Button>Submit Listing</Button>
+          <Link to={"/automart.lk/profile"}>
+            <Button>Submit Listing</Button>
+          </Link>
         </div>
       ) : (
-        <Button className="hidden md:block">Submit Listing</Button>
+        <Link to={"/automart.lk/profile"}>
+          <Button className="hidden md:block">Submit Listing</Button>
+        </Link>
       )}
     </div>
   );

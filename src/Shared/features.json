@@ -1,0 +1,76 @@
+{
+  "features": [
+    {
+      "label": "Air Conditioner",
+      "name": "air_conditioner",
+      "fieldType": "checkbox",
+      "icon": "air_conditioner"
+    },
+    {
+      "label": "Digital Odometer",
+      "name": "digital_odometer",
+      "fieldType": "checkbox",
+      "icon": "digital_odometer"
+    },
+    {
+      "label": "Leather Seats",
+      "name": "leather_seats",
+      "fieldType": "checkbox",
+      "icon": "leather_seats"
+    },
+    {
+      "label": "Power Steering",
+      "name": "power_steering",
+      "fieldType": "checkbox",
+      "icon": "power_steering"
+    },
+    {
+      "label": "Power Windows",
+      "name": "power_windows",
+      "fieldType": "checkbox",
+      "icon": "power_windows"
+    },
+    {
+      "label": "Sunroof",
+      "name": "sunroof",
+      "fieldType": "checkbox",
+      "icon": "sunroof"
+    },
+    {
+      "label": "Bluetooth Connectivity",
+      "name": "bluetooth_connectivity",
+      "fieldType": "checkbox",
+      "icon": "bluetooth_connectivity"
+    },
+    {
+      "label": "Navigation System",
+      "name": "navigation_system",
+      "fieldType": "checkbox",
+      "icon": "navigation_system"
+    },
+    {
+      "label": "Cruise Control",
+      "name": "cruise_control",
+      "fieldType": "checkbox",
+      "icon": "cruise_control"
+    },
+    {
+      "label": "Rear Parking Sensors",
+      "name": "rear_parking_sensors",
+      "fieldType": "checkbox",
+      "icon": "rear_parking_sensors"
+    },
+    {
+      "label": "Blind Spot Monitoring",
+      "name": "blind_spot_monitoring",
+      "fieldType": "checkbox",
+      "icon": "blind_spot_monitoring"
+    },
+    {
+      "label": "Lane Departure Warning",
+      "name": "lane_departure_warning",
+      "fieldType": "checkbox",
+      "icon": "lane_departure_warning"
+    }
+  ]
+}
