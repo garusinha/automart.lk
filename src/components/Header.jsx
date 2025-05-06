@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useUser, UserButton } from "@clerk/clerk-react";
+import { useUser, UserButton, SignInButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 import { FiMenu, FiX } from "react-icons/fi"; // Import icons for the hamburger menu
 import { Link } from "react-router-dom";
@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 function Header() {
   const { user, isSignedIn } = useUser();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
-
   return (
-    <div className="flex justify-between items-center p-4 shadow-sm">
+    <div className="flex justify-between items-center p-4 shadow-sm  ">
       {/* Logo */}
       <img
         src={`${import.meta.env.BASE_URL}logo.png`}
@@ -18,7 +17,7 @@ function Header() {
       />
 
       {/* Submit Listing Button for Mobile */}
-      <Button className="block md:hidden text-sm px-2 py-1 bg-[#2f2f33] text-white rounded-md">
+      <Button className="block md:hidden text-sm px-2 py-1 bg-[#2f2f33] text-white rounded-md hover:bg-[#2f2f33] cursor-pointer">
         Submit Listing
       </Button>
 
@@ -34,18 +33,18 @@ function Header() {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
-        <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-          Home
+        <li className="font-medium hover:scale-105 cursor-pointer hover:text-primary">
+          <Link to="/automart.lk/">Home </Link>
         </li>
-        <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-          Search
+        <li className="font-medium hover:scale-105  cursor-pointer hover:text-primary">
+          <Link to="/automart.lk/search">Search</Link>
         </li>
-        <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+        {/* <li className="font-medium hover:scale-105  cursor-pointer hover:text-primary">
           New
         </li>
-        <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+        <li className="font-medium hover:scale-105  cursor-pointer hover:text-primary">
           PreOwned
-        </li>
+        </li> */}
       </ul>
 
       {/* Mobile Menu */}
@@ -77,9 +76,9 @@ function Header() {
           </Link>
         </div>
       ) : (
-        <Link to={"/automart.lk/profile"}>
-          <Button className="hidden md:block">Submit Listing</Button>
-        </Link>
+        <SignInButton mode="">
+          <Button className="hidden md:block">Sign In</Button>
+        </SignInButton>
       )}
     </div>
   );

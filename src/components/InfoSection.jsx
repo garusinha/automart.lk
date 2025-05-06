@@ -3,26 +3,28 @@ import React from "react";
 function InfoSection() {
   return (
     <section>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
-          <div className="md:col-span-2 ">
+      <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-10 lg:px-16 mt-10">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-4 md:items-center">
+          <div className="md:col-span-2 flex justify-center">
             <img
-              src="https://c4.wallpaperflare.com/wallpaper/66/220/943/bmw-cars-car-sport-car-wallpaper-preview.jpg"
-              className="rounded w-200 ml-5 md:ml-20 md:max-w-lg lg:max-w-xl"
+              // src="/public/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              className=" w-[500px] h-auto md:max-w-lg lg:max-w-xl"
               alt=""
             />
           </div>
 
-          <div className="md:col-span-2 ml-20 ">
+          <div className="md:col-span-2">
             <div className="max-w-lg md:max-w-none">
-              <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <h2 className="text-xl font-semibold text-gray-700 sm:text-2xl">
+                Find Your Next Ride on AutoMart.Lk
               </h2>
 
-              <p className="mt-4 text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                doloremque saepe architecto maiores repudiandae amet perferendis
-                repellendus, reprehenderit voluptas sequi.
+              <p className="mt-2 text-gray-500 text-justify">
+                AutoMart.Lk aims to be Sri Lanka's premier online marketplace
+                for easily buying and selling vehicles. Browse a wide selection
+                of new and used cars with detailed listings and connect directly
+                with sellers across the country.
               </p>
             </div>
           </div>

@@ -28,7 +28,15 @@
       "label": "Category",
       "name": "category",
       "fieldType": "dropdown",
-      "options": ["SUV", "Sedan", "Truck", "Hatchback", "Coupe"],
+      "options": [
+        "SUV",
+        "Sedan",
+        "Truck",
+        "Hatchback",
+        "Coupe",
+        "Sports",
+        "Convertible"
+      ],
       "required": true,
       "column": 1,
       "icon": "fa-solid fa-car"
@@ -117,20 +125,20 @@
       "icon": "fa-solid fa-map-marker-alt"
     },
     {
+      "label": "Contact",
+      "name": "contact",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "fa-solid fa-map-marker-alt"
+    },
+    {
       "label": "Description",
       "name": "description",
       "fieldType": "textarea",
       "required": true,
       "column": 2,
       "icon": "fa-solid fa-align-left"
-    },
-    {
-      "label": "Images",
-      "name": "images",
-      "fieldType": "file",
-      "required": true,
-      "column": 2,
-      "icon": "fa-solid fa-images"
     }
   ]
 }

@@ -6,29 +6,15 @@ const CarMakes = [
   { id: 5, name: "Nissan" },
   { id: 6, name: "BMW" },
   { id: 7, name: "Mercedes-Benz" },
-  { id: 8, name: "Volkswagen" },
-  { id: 9, name: "Hyundai" },
-  { id: 10, name: "Kia" },
-  { id: 11, name: "Subaru" },
-  { id: 12, name: "Mazda" },
-  { id: 13, name: "Lexus" },
-  { id: 14, name: "Audi" },
+  { id: 8, name: "Audi" },
+  { id: 9, name: "Volkswagen" },
+  { id: 10, name: "Hyundai" },
+  { id: 11, name: "Kia" },
+  { id: 12, name: "Subaru" },
+  { id: 13, name: "Mazda" },
+  { id: 14, name: "Lexus" },
   { id: 15, name: "Porsche" },
-  { id: 16, name: "Land Rover" },
-  { id: 17, name: "Jaguar" },
-  { id: 18, name: "Tesla" },
-  { id: 19, name: "Volvo" },
-  { id: 20, name: "Buick" },
-  { id: 21, name: "Chrysler" },
-  { id: 22, name: "Dodge" },
-  { id: 23, name: "Jeep" },
-  { id: 24, name: "Ram" },
-  { id: 25, name: "GMC" },
-  { id: 26, name: "Mitsubishi" },
-  { id: 27, name: "Infiniti" },
-  { id: 28, name: "Acura" },
-  { id: 29, name: "Lincoln" },
-  { id: 30, name: "Mini" },
+  { id: 16, name: "Jaguar" },
 ];
 const Pricing = [
   { id: 1, amount: "Under $10,000" },
@@ -54,21 +40,13 @@ const Category = [
     name: "Hatchback",
     icon: "https://cdn-icons-png.flaticon.com/128/5035/5035167.png", // Black Coupe icon
   },
-  {
-    id: 4,
-    name: "Electric",
-    icon: "https://cdn-icons-png.flaticon.com/128/4564/4564336.png", // Black Electric car icon
-  },
+
   {
     id: 5,
     name: "Convertible",
     icon: "https://cdn-icons-png.flaticon.com/128/5035/5035202.png", // Black Hatchback icon
   },
-  {
-    id: 6,
-    name: "Hybrid",
-    icon: "https://cdn-icons-png.flaticon.com/128/3202/3202003.png", // Black Van icon
-  },
+
   {
     id: 7,
     name: "Sports",
