@@ -14,14 +14,9 @@ import Footer from "@/components/Footer";
 function Profile() {
   return (
     <div>
-      <Header />
-      <div className="container mx-auto mt-4 px-10 md:px-20 my-10">
+      <Header hidePostButton={true} />
+      <div className="container mx-auto mt-4 px-5 md:px-20 ">
         <Tabs defaultValue="my-listing" className="w-full">
-          {/* <TabsList className="w-full flex justify-start">
-            <TabsTrigger value="my-listing">My Listing</TabsTrigger>
-            <TabsTrigger value="inbox">Inbox</TabsTrigger>
-            <TabsTrigger value="profile">Profile</TabsTrigger>
-          </TabsList> */}
           <TabsContent value="my-listing">
             <MyListing />
           </TabsContent>

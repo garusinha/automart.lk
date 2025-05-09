@@ -53,14 +53,11 @@ function AddListing() {
         .where(eq(CarListing.id, recordId));
       const resp = Service.FormatResult(result);
 
-      // console.log("Response from database:", resp[0]); // Debugging response
-
       setCarInfo(resp[0]); // Populate carInfo
       setFormData(resp[0]); // Populate formData
 
       // Extract existing features from the database response
       const existingFeatures = resp[0]?.features || {};
-      console.log("Existing features from database:", existingFeatures);
 
       // Map existing features to featuresData
       const populatedFeaturesData = features.features?.reduce(
@@ -71,13 +68,12 @@ function AddListing() {
         {}
       );
       setFeaturesData(populatedFeaturesData);
-
-      console.log("Populated featuresData:", populatedFeaturesData); // Debugging
     } catch (error) {
       console.error("Error fetching listing details:", error);
       toast.error("Failed to fetch listing details.");
     }
   };
+
   const handleInputChange = (name, value) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -127,7 +123,6 @@ function AddListing() {
           .returning({ id: CarListing.id });
 
         if (result) {
-          console.log("Database insertion successful. ID:", result[0]?.id);
           setTriggerUploadImages(result[0]?.id);
         }
 
@@ -146,9 +141,9 @@ function AddListing() {
 
   return (
     <div>
-      <Header />
+      <Header hidePostButton={true} /> {/* Pass the prop to hide the button */}
       <div className="px-10 md:px-40 my-10">
-        <h2 className="font-bold text-4xl">Add New Listing</h2>
+        <h2 className="font-bold text-4xl">Create your New Add</h2>
         <form
           className="p-10 border rounded-xl mt-10 bg-white"
           onSubmit={onSubmit}

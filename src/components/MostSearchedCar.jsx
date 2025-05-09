@@ -58,11 +58,6 @@ function MostSearchedCar() {
 
   return (
     <div className="mx-15 pl-0 pr-0 md:pl-20 md:pr-20">
-      {/* Heading */}
-      <h2 className="font-bold text-xl text-center my-8">
-        All Available Cars in Page {currentPage + 1}
-      </h2>
-
       {/* Loading State */}
       {loading ? (
         <p className="text-center text-gray-500">Loading ads...</p>
@@ -70,10 +65,10 @@ function MostSearchedCar() {
         <p className="text-center text-gray-500">No ads found.</p>
       ) : (
         <>
-          <div className="my-0">
+          <div className="my-0 w-full">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
               {carList[currentPage].map((car, index) => (
-                <div key={index} className="rounded-lg p-4">
+                <div key={index} className="  pt-4 sm:p-4">
                   <CarItem car={car} />
                 </div>
               ))}

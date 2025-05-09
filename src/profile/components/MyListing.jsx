@@ -97,9 +97,9 @@ function MyListing() {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <h2 className="font-bold text-4xl">My Listing</h2>
+        <h2 className="font-bold text-2xl md:text-4xl">My Listing</h2>
         <Link to={"/automart.lk/add-listing"}>
-          <Button className="bg-blue-500 text-white hover:bg-blue-700 mt-4">
+          <Button className="bg-blue-500 text-white hover:bg-blue-700 mt-4 text-xs md:text-sm">
             + Add New Listing
           </Button>
         </Link>
@@ -117,7 +117,7 @@ function MyListing() {
               <CarItem car={item} />
               <div className="p-2 flex justify-between rounded-lg bg-gray-50 gap-2">
                 <Link to={"/automart.lk/add-listing?mode=edit&id=" + item?.id}>
-                  <Button variant="outline" className="w-52 cursor-pointer">
+                  <Button variant="outline" className="w-30 cursor-pointer ">
                     Edit
                   </Button>
                 </Link>

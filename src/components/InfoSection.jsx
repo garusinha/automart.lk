@@ -9,18 +9,18 @@ function InfoSection() {
             <img
               // src="/public/logo.png"
               src={`${import.meta.env.BASE_URL}logo.png`}
-              className=" w-[500px] h-auto md:max-w-lg lg:max-w-xl"
+              className=" w-[200px] md:w-[500px] h-auto md:max-w-lg lg:max-w-xl"
               alt=""
             />
           </div>
 
           <div className="md:col-span-2">
             <div className="max-w-lg md:max-w-none">
-              <h2 className="text-xl font-semibold text-gray-700 sm:text-2xl">
+              <h2 className="text-lg md:text-xl font-semibold text-gray-700 sm:text-2xl text-center">
                 Find Your Next Ride on AutoMart.Lk
               </h2>
 
-              <p className="mt-2 text-gray-500 text-justify">
+              <p className="mt-2 text-gray-500 text-sm md:text-lg md:text-justify text-center">
                 AutoMart.Lk aims to be Sri Lanka's premier online marketplace
                 for easily buying and selling vehicles. Browse a wide selection
                 of new and used cars with detailed listings and connect directly
