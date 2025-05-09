@@ -23,16 +23,16 @@ function Calculator() {
   };
 
   return (
-    <div className="flex justify-center bg-gray-50 py-10 -mt-10">
-      <div className="p-4 rounded-lg bg-gray-100 shadow-sm w-[50%]">
-        <h2 className="text-2xl font-semibold text-center text-gray-700 mb-4">
+    <div className="flex flex-col md:flex-row justify-center bg-gray-50 ml-10 md:py-10 -mt-5 ">
+      <div className="p-4 rounded-lg bg-gray-100 shadow-sm md:w-[50%]">
+        <h2 className="text-md md:text-2xl font-semibold text-center text-gray-700 mb-4">
           Financial Calculator
         </h2>
-        <div className="space-y-4">
+        <div className="md:space-y-4">
           {/* Loan Value and Interest Rate in One Row */}
-          <div className="flex gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             {/* Loan Value */}
-            <div className="flex-1">
+            <div className="md:flex-1">
               <label className="block text-sm font-medium text-gray-600">
                 Loan Value
               </label>

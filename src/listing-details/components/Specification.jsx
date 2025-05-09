@@ -4,8 +4,10 @@ import React from "react";
 
 function Specification({ carDetail }) {
   return (
-    <div className=" -ml-25 mt-4">
-      <h2 className="p-5 text-xl font-bold">Car Specification</h2>
+    <div className="md:-ml-25 md:mt-4 -mt-20">
+      <h2 className="p-5 text-md text-center md:text-xl font-bold">
+        Car Specification
+      </h2>
       {CarSpecification.map((item, index) => (
         <div
           className="flex items-center gap-2 p-2 border-b justify-between"

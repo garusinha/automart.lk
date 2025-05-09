@@ -13,7 +13,7 @@ function Header({ hidePostButton = false }) {
       {/* Logo */}
       <img
         src={`${import.meta.env.BASE_URL}logo.png`}
-        className="w-40 sm:w-40 md:w-48 lg:w-56 h-auto"
+        className="w-30 sm:w-40 md:w-48 lg:w-56 h-auto"
         alt="Logo"
       />
 
@@ -28,19 +28,28 @@ function Header({ hidePostButton = false }) {
       </ul>
 
       {/* Submit Listing Button for Mobile */}
-      {!hidePostButton && (
-        <Link to={"/automart.lk/profile"}>
-          <Button className="block md:hidden text-sm px-2 py-1 bg-[#2f2f33] text-white rounded-md hover:bg-[#2f2f33] cursor-pointer">
-            Post Your Add
-          </Button>
-        </Link>
+      {!hidePostButton && isSignedIn ? (
+        <div className="md:hidden flex items-center space-x-4">
+          <Link to={"/automart.lk/profile"}>
+            <Button className="block md:hidden text-[10px] h-6 px-1 py-1 bg-[#2f2f33] text-white rounded-sm hover:bg-[#2f2f33] cursor-pointer">
+              Post Your Add
+            </Button>
+          </Link>
+          <UserButton />
+        </div>
+      ) : (
+        !hidePostButton && (
+          <SignInButton mode="">
+            <Button className="hidden md:block">Sign In</Button>
+          </SignInButton>
+        )
       )}
 
       {/* Hamburger Menu for Mobile */}
       <div className="md:hidden">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-2xl focus:outline-none"
+          className="text-xl focus:outline-none"
         >
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>

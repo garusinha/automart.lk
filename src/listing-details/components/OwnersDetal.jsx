@@ -4,8 +4,8 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 function OwnersDetal({ carDetail }) {
   return (
-    <div className=" -ml-25 mt-3 p-5">
-      <h2 className="text-xl font-bold text-gray-700 mb-3 text-center">
+    <div className=" md:-ml-25 mt-3 p-5">
+      <h2 className="text-md md:text-xl font-bold md:text-gray-700 mb-3 text-center">
         Owner Details / Deals
       </h2>
       <div className="flex items-center gap-6">
@@ -13,11 +13,11 @@ function OwnersDetal({ carDetail }) {
         <img
           src={carDetail?.userImageUrl}
           alt="Owner"
-          className="w-[100px] h-[100px] rounded-full border-2 border-blue-500"
+          className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full border-2 border-blue-500"
         />
         {/* User Details */}
-        <div className="space-y-3">
-          <h2 className="text-md font-bold text-gray-600">
+        <div className="space-y-2 md:space-y-3">
+          <h2 className="text-sm md:text-md font-bold text-gray-600">
             {carDetail?.userName || "Unknown User"}
           </h2>
           <p className="text-sm text-gray-500 flex items-center gap-2">

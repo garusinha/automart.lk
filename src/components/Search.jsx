@@ -23,7 +23,7 @@ function Search() {
         className="inline-flex w-20 "
         onValueChange={(value) => setCars(value)}
       >
-        <SelectTrigger className="w-full  outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-[2px] sm:p-5 truncate justify-center text-center ">
+        <SelectTrigger className="w-full  outline-none border border-gray-300 shadow-none text-xs sm:text-sm p-[1px] sm:p-5 truncate justify-center text-center ">
           <SelectValue placeholder="Condition" />
         </SelectTrigger>
         <SelectContent
