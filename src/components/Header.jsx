@@ -46,17 +46,17 @@ function Header({ hidePostButton = false }) {
       )}
 
       {/* Hamburger Menu for Mobile */}
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-xl focus:outline-none"
         >
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
-      </div>
+      </div> */}
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="absolute top-16 right-0 items-center bg-white shadow-md z-50 flex flex-col space-y-4 py-4 md:hidden h-full w-full">
           <ul className="list-none justify-center space-y-4">
             <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
@@ -67,7 +67,7 @@ function Header({ hidePostButton = false }) {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
 
       {/* Submit Listing Button for Desktop */}
       {!hidePostButton && isSignedIn ? (
